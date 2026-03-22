@@ -32,7 +32,12 @@ header h1 {
 
 .tagline {
   color: var(--muted);
-  margin: 0;
+  margin: 0 0 0.5rem;
+}
+
+nav a {
+  margin-right: 1rem;
+  font-size: 0.95rem;
 }
 
 main section {
@@ -45,6 +50,10 @@ main h2 {
   padding-bottom: 0.25rem;
 }
 
+ul {
+  padding-left: 1.25rem;
+}
+
 a {
   color: var(--accent);
   text-decoration: none;
@@ -54,10 +63,26 @@ a:hover {
   text-decoration: underline;
 }
 
+code {
+  background: #eee;
+  padding: 0.1rem 0.35rem;
+  border-radius: 3px;
+  font-size: 0.9em;
+}
+
 footer {
   margin-top: 3rem;
   padding-top: 1rem;
   border-top: 1px solid #e0e0e0;
   color: var(--muted);
   font-size: 0.9rem;
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 1rem;
+  }
+  header h1 {
+    font-size: 1.6rem;
+  }
 }
